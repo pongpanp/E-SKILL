@@ -31,7 +31,7 @@ int signIn() {
 		return 1;
 		}
 		
-		if (loopCheck != 4)  printf("Input password at %d no correct\n", loopCheck) 
+		if (loopCheck != 4)  printf("Input password at %d no correct\n", loopCheck); 
 	
 		printf("...............................\n");
 				
