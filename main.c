@@ -92,28 +92,19 @@ int calculator(int choice) {
 	} else {
 		number2 = inputNumber; 
 	}
-
-	
-	
 	printf("...............................\n");
 	
-
 	switch (choice) {
-		case 1: 
-			printf("%d + %d = %d \n", number1,  number2 , number1 + number2);
+		case 1: printf("%d + %d = %d \n", number1,  number2 , number1 + number2);
 		break;
-		case 2: 
-			printf("%d - %d = %d \n", number1,  number2 , number1 - number2);
+		case 2: printf("%d - %d = %d \n", number1,  number2 , number1 - number2);
 		break;
-		case 3: 
-			printf("%d x %d = %d \n", number1,  number2 , number1 * number2);
+		case 3: printf("%d x %d = %d \n", number1,  number2 , number1 * number2);
 		break;
-		case 4: 
-			printf("%d div %d = %d \n", number1,  number2 , number1 / number2);
+		case 4: printf("%d div %d = %d \n", number1,  number2 , number1 / number2);
 		break;
-		case 5: 
-			printf("%d mod %d = %d \n", number1,  number2 , number1 % number2);
-		default: printf("Not A Menu");
+		case 5: printf("%d mod %d = %d \n", number1,  number2 , number1 % number2);
+		default: printf("Not A Menu"); break;
 	}
 
 	return 1;
