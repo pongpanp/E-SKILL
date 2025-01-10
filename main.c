@@ -43,7 +43,7 @@ int mainMenu() {
 	int choice;
 	
 	printf("...............................\n");
-	printf("         Main Program\n");
+	printf("           Main Menu\n");
 	printf("...............................\n");
 	printf(" 1. +\n 2. -\n 3. x\n 4. div\n 5. mod\n 6. Exit\n");
 	printf("...............................\n");
