@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]) {
 
-	// เรียกหน้า signIn
+	// ????????? signIn
 	int isSuccess = signIn();
 	int isExit;
 	if (isSuccess) {
@@ -85,7 +85,7 @@ int calculator(int choice) {
 	} while (0 < inputNumber && inputNumber > 10);
 	
 		
-	if (choice != 1 && inputNumber > number1)  {
+	if (choice != 1 && choice != 3  && inputNumber > number1)  {
 	number2 = number1;
 	number1 = inputNumber;	
 	} else {
