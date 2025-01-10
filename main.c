@@ -19,22 +19,18 @@ int main(int argc, char *argv[]) {
 int signIn() {
 	int pwMaster = 12345;
 	int pwInput;
-	int loopCheck = 1;
-	
-	do {
+	int i;
+	for ( i = 1 ; i <= 4 ; i++) {
 		printf("Input Password ==> ");
 		scanf("%d", &pwInput);
 		
 		if(pwInput == pwMaster) {
 		return 1;
 		}
-		
-		if (loopCheck != 4)  printf("Input password at %d no correct\n", loopCheck); 
+		if (i != 4)  printf("Input password at %d no correct\n", i); 
 	
 		printf("...............................\n");
-				
-		loopCheck++;
-	} while (loopCheck <= 4);
+	}
 	return 0;
 }
 
