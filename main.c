@@ -104,6 +104,7 @@ int calculator(int choice) {
 		case 4: printf("%d div %d = %d \n", number1,  number2 , number1 / number2);
 		break;
 		case 5: printf("%d mod %d = %d \n", number1,  number2 , number1 % number2);
+		break;
 		default: printf("Not A Menu"); break;
 	}
 
