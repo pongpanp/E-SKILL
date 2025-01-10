@@ -5,7 +5,6 @@
 
 int main(int argc, char *argv[]) {
 
-	// ????????? signIn
 	int isSuccess = signIn();
 	int isExit;
 	if (isSuccess) {
@@ -20,7 +19,6 @@ int main(int argc, char *argv[]) {
 int signIn() {
 	int pwMaster = 12345;
 	int pwInput;
-	
 	int loopCheck = 1;
 	
 	do {
@@ -70,7 +68,6 @@ int calculator(int choice) {
 	int number1;
 	int number2;
 		
-	
 	do {
 	printf("Input Number 1 [1-10] ==> ");
 	scanf("%d/n", &inputNumber);
@@ -84,28 +81,21 @@ int calculator(int choice) {
 	scanf("%d/n", &inputNumber);
 	} while (0 < inputNumber && inputNumber > 10);
 	
-		
 	if (choice != 1 && choice != 3  && inputNumber > number1)  {
-	number2 = number1;
-	number1 = inputNumber;	
+		number2 = number1;
+		number1 = inputNumber;	
 	} else {
 		number2 = inputNumber; 
 	}
 	printf("...............................\n");
 	
 	switch (choice) {
-		case 1: printf("%d + %d = %d \n", number1,  number2 , number1 + number2);
-		break;
-		case 2: printf("%d - %d = %d \n", number1,  number2 , number1 - number2);
-		break;
-		case 3: printf("%d x %d = %d \n", number1,  number2 , number1 * number2);
-		break;
-		case 4: printf("%d div %d = %d \n", number1,  number2 , number1 / number2);
-		break;
-		case 5: printf("%d mod %d = %d \n", number1,  number2 , number1 % number2);
-		break;
+		case 1: printf("%d + %d = %d \n", number1,  number2 , number1 + number2); break;
+		case 2: printf("%d - %d = %d \n", number1,  number2 , number1 - number2); break;
+		case 3: printf("%d x %d = %d \n", number1,  number2 , number1 * number2); break;
+		case 4: printf("%d div %d = %d \n", number1,  number2 , number1 / number2); break;
+		case 5: printf("%d mod %d = %d \n", number1,  number2 , number1 % number2); break;
 		default: printf("Not A Menu"); break;
 	}
-
 	return 1;
 }
