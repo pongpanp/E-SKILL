@@ -52,10 +52,15 @@ int mainMenu() {
 	scanf("%d", &choice);
 	printf("...............................\n");
 	
-	if (choice != 6) {
-		calculator(choice);
+	if (choice < 1 || choice > 6) {
+		printf("<< Incorrect Please Select Menu 1 - 6 >>\n");
 		return 1;
 	}
+	
+	if (choice > 0 && choice != 6) {
+		calculator(choice);
+		return 1;
+	} 
 	
 	printf("<< Bye Bye >>");
 	return 0;
@@ -67,14 +72,20 @@ int calculator(int choice) {
 	int number2;
 		
 	
+	do {
 	printf("Input Number 1 [1-10] ==> ");
 	scanf("%d/n", &inputNumber);
+	} while (0 < inputNumber && inputNumber > 10);
+	
 	number1 = inputNumber;
 	
 	
+	do {
 	printf("Input Number 2 [1-10] ==> ");
-	scanf("%d/n", &inputNumber);	
+	scanf("%d/n", &inputNumber);
+	} while (0 < inputNumber && inputNumber > 10);
 	
+		
 	if (choice != 1 && inputNumber > number1)  {
 	number2 = number1;
 	number1 = inputNumber;	
@@ -90,24 +101,19 @@ int calculator(int choice) {
 	switch (choice) {
 		case 1: 
 			printf("%d + %d = %d \n", number1,  number2 , number1 + number2);
-			return 1;
 		break;
 		case 2: 
 			printf("%d - %d = %d \n", number1,  number2 , number1 - number2);
-			return 1;
 		break;
 		case 3: 
 			printf("%d x %d = %d \n", number1,  number2 , number1 * number2);
-			return 1;
 		break;
 		case 4: 
 			printf("%d div %d = %d \n", number1,  number2 , number1 / number2);
-			return 1;
 		break;
 		case 5: 
 			printf("%d mod %d = %d \n", number1,  number2 , number1 % number2);
-			return 1;
-		default: return 1;
+		default: printf("Not A Menu");
 	}
 
 	return 1;
