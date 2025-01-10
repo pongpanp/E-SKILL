@@ -71,15 +71,14 @@ int calculator(int choice) {
 	do {
 	printf("Input Number 1 [1-10] ==> ");
 	scanf("%d/n", &inputNumber);
-	} while (0 < inputNumber && inputNumber > 10);
+	} while (inputNumber < 0 || inputNumber > 10);
 	
 	number1 = inputNumber;
-	
 	
 	do {
 	printf("Input Number 2 [1-10] ==> ");
 	scanf("%d/n", &inputNumber);
-	} while (0 < inputNumber && inputNumber > 10);
+	} while (inputNumber < 0 || inputNumber > 10);
 	
 	if (choice != 1 && choice != 3  && inputNumber > number1)  {
 		number2 = number1;
