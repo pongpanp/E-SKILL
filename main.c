@@ -4,7 +4,8 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	
+
+	// เรียกหน้า signIn
 	int isSuccess = signIn();
 	int isExit;
 	if (isSuccess) {
@@ -31,7 +32,7 @@ int signIn() {
 		
 		(loopCheck != 4) 
 			? printf("Input password at %d no correct\n", loopCheck) 
-			: printf("!!! Exit !!!\n", loopCheck);
+			: printf("Bye Bye", loopCheck);
 		printf("...............................\n");
 				
 		loopCheck++;
