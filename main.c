@@ -48,7 +48,6 @@ int mainMenu() {
 	printf(" 1. +\n 2. -\n 3. x\n 4. div\n 5. mod\n 6. Exit\n");
 	printf("...............................\n");
 	printf("Select to choice ==> ");
-	
 	scanf("%d", &choice);
 	printf("...............................\n");
 	
