@@ -13,6 +13,7 @@ int main(int argc, char *argv[]) {
 			isExit = mainMenu();
 		} while (isExit != 0);
 	}
+	printf("<< Bye Bye >>");
 	return 0;
 }
 
@@ -62,7 +63,6 @@ int mainMenu() {
 		return 1;
 	} 
 	
-	printf("<< Bye Bye >>");
 	return 0;
 }
 
